@@ -1,0 +1,52 @@
+@import '_variables';
+@import '_mixins';
+
+body{
+	margin: 0 auto;
+	background-color: $white;
+	color: $black;
+	font-family: 'Source Sans Pro', sans-serif;
+	float: left;
+	text-align: center;
+	@include size;
+}
+
+header, footer{
+	text-align: center;
+}
+
+#main-header{
+	padding: 30px 8px;
+	@include size;
+	color: $white;
+	background-color: $green1;
+	font-weight: bold;
+	font-size: 38px;
+}
+
+footer{
+	color: $greyshade3;
+	font-size: $fontsize15;
+	padding: 30px 8px;
+	@include size;
+}
+
+ul{
+	li{
+		list-style-type: circle;
+		text-align: left;
+		margin-top: 6px;
+
+		a{
+			color: $greyshade3;
+			text-decoration: none;
+		}
+	}
+}
+
+.no-display{
+	display: none;
+}
+.block-display{
+	display: block;
+}

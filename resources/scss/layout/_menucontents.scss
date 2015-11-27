@@ -1,0 +1,156 @@
+#menu-content-wrapper{
+	@include size;
+}
+
+#content{
+	#menu-content-wrapper{
+		@include alignment(left, 78%);
+		padding: 15px;
+		height: 80%;
+		padding-top: 80px;
+
+		#scripting-wrapper{
+			header{
+				color: $greyshade3;
+				font-weight: bold;
+				font-size: $fontsize22;
+				text-decoration: underline;				
+			}
+			ul{
+				li{
+					h2{
+						color: $green1 !important;
+						font-weight: bold;
+					}
+					color: $greyshade3;
+				}
+			}
+			.sub-header{
+				color: $green1;
+				text-align: left;
+				margin: 50px 0 0 40px;
+			}
+		}
+
+		#browse-wrapper{	
+			p{
+				color: $greyshade3;
+				text-align: left;
+				width: 89%;
+				margin: 0 auto;
+				margin-top: 15px;
+			}		
+			ul{
+				li{
+					line-height: 2;
+					cursor: pointer;
+
+					a{
+						&:hover{
+							color: $white;
+						}
+					}
+					img{
+						width: 20px;
+						float: right;
+						cursor: pointer;	
+					}
+				}
+			}
+			ul:nth-child(1){
+				li{
+					@include selectMenu($skyblue);
+				}
+			}
+			ul:nth-child(2){
+				li{
+					@include selectMenu($skyblue);
+				}
+			}
+			ul:nth-child(3){
+				li{
+					@include selectMenu($skyblue);
+				}
+			}
+		}
+
+		#styling-comp-Wrapper{
+			section{
+				@include alignment(left,32%);
+
+				h2{
+					font-weight: normal;
+					color: $greyshade3;
+					font-size: $fontsize20;
+					margin-bottom: 2px;
+					border-bottom: 1px solid $greyshade2;
+					width: 90%;
+					text-align: left;
+					margin-left: 9%;
+				}
+				.each-style-wrapper{
+					color: $greyshade3;
+					text-align: left;
+					width: 73%;
+    				margin-left: 9%;
+				}
+			}
+		}
+
+		#frameworks-wrapper{
+			text-align: left;
+
+			ul{
+				li{
+					list-style-type: none;
+					margin-top: 5%;
+					text-align: left;
+					@include size(88%);
+					overflow-x: visible;
+
+					header{
+						padding: 5px 8px !important;
+						margin-top: -24px;
+						text-align: left;
+						font-size: $fontsize20;
+						font-weight: normal;
+						@include bg-gradient;
+
+						span{
+							width: 10px;
+							padding: 2px 8px;
+							border-radius: 25px;
+							background-color: #FFF;
+							color: $greyshade3;
+							margin-right: 2%;
+						}
+					}
+
+					p{
+						color: $greyshade3;
+						width: 90%;						
+						overflow: hidden;
+						text-overflow: ellipsis;
+						a{
+							cursor: pointer;
+							color: $orange;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.more-link{
+	cursor: pointer;
+	color: $orange;
+	font-weight: bold;
+	text-align:left;
+	margin-left: 40px;
+}
+.short-display{
+	white-space: nowrap;
+}
+.normal-display{
+	white-space: normal;
+}

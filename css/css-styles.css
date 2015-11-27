@@ -1,0 +1,257 @@
+/*base*/
+body{
+	margin: 0 auto;
+	background-color: #FFF;
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;
+	float: left;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+header, footer{
+	text-align: center;
+}
+
+#main-header{
+	padding: 30px 8px;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+	color: #fff;
+	background-color: #5bbc2e;
+	font-weight: bold;
+	font-size: 38px;
+}
+
+footer{
+	color: #4d4d4d;
+	font-size: 15px;
+	padding: 30px 8px;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+ul li{
+	list-style-type: circle;
+	text-align: left;
+	margin-top: 6px;
+}
+ul li a{
+	color: #4d4d4d;
+	text-decoration: none;
+}
+
+
+/*main content*/
+#page-icon {
+    width: 186px;
+    height: 125px;
+    overflow-x: hidden;
+    margin-top: -107px;
+    margin-left: 50px;
+    background-color: #4d4d4d;
+}
+
+#page-icon h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 86px;
+    overflow: hidden;
+    margin: 0;
+    margin-top: 9px;
+}
+
+#content, #menu-wrapper{
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+/*menu wrapper content*/
+#content #menu-wrapper{
+	float: left;
+	width: 17%;
+	height: auto;
+	overflow-x: hidden;
+	padding: 15px;
+	height: 80%;
+}
+#content #menu-wrapper h2{
+	padding: 15px 0 0 41px;
+	text-align: left;
+	color: #4d4d4d;
+}
+#content #menu-wrapper ul li{
+	padding: 8px;
+	background: -webkit-linear-gradient(#B8B8B8, #E0E0E0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#B8B8B8, #E0E0E0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#B8B8B8, #E0E0E0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#B8B8B8, #E0E0E0);
+	border: 1px solid #B8B8B8;
+	cursor: pointer;
+}
+#content #menu-wrapper ul li:hover{
+	background: -webkit-linear-gradient(#E0E0E0, #B8B8B8); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#E0E0E0, #B8B8B8); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#E0E0E0, #B8B8B8); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#E0E0E0, #B8B8B8);
+	border: 1px solid #B8B8B8;
+}
+
+/*menu content wrapper*/
+#content #menu-content-wrapper{
+	float: left;
+	width: 78%;
+	height: auto;
+	overflow-x: hidden;
+	padding: 15px;
+	height: 80%;
+	padding-top: 80px;
+}
+
+/*menu content wrapper - menu1 scripting*/
+#content #menu-content-wrapper #scripting-wrapper header{
+	color: #4d4d4d;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: underline;	
+}
+#content #menu-content-wrapper #scripting-wrapper ul li{
+	color: #4d4d4d;
+}
+#content #menu-content-wrapper #scripting-wrapper ul li h2{
+	color: #5bbc2e;
+	font-weight: bold;
+}
+#content #menu-content-wrapper #scripting-wrapper .sub-header{
+	color: #5bbc2e;
+	text-align: left;
+	margin: 50px 0 0 40px;
+}
+
+/*menu content wrapper - menu2 languages*/
+#content #browse-wrapper p{
+	color: #4d4d4d;
+	text-align: left;
+	width: 89%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+#content #browse-wrapper ul li{
+	line-height: 2;
+	cursor: pointer;
+	padding: 9px;
+	color: #FFF;
+	text-align: left;
+	list-style-type: none;
+}
+#content #browse-wrapper ul li a:hover{
+	color: #FFF;
+}
+#content #browse-wrapper ul li img{
+	width: 20px;
+	float: right;
+	cursor: pointer;
+}
+#content #browse-wrapper ul:nth-child(1) li{
+	background-color: #24b3b5;
+	width: 20%;
+	height: auto;
+	overflow-x: hidden;
+}
+#content #browse-wrapper ul:nth-child(2) li{
+	background-color: #24b3b5;	
+	width: 20%;
+	height: auto;
+	overflow-x: hidden;
+}
+#content #browse-wrapper ul:nth-child(3) li{
+	background-color: #24b3b5;	
+	width: 20%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+/*menu content wrapper - menu3 styling comparison*/
+#content #styling-comp-Wrapper section{
+	float: left;
+	width: 32%;
+	height: auto;
+	overflow-x: hidden;
+}
+#content #styling-comp-Wrapper section h2{
+	font-weight: normal;
+	color: #4d4d4d;
+	font-size: 20px;
+	margin-bottom: 2px;
+	border-bottom: 1px solid #E0E0E0;
+	width: 90%;
+	text-align: left;
+	margin-left: 9%;
+}
+#content #styling-comp-Wrapper section .each-style-wrapper{
+	color: #4d4d4d;
+	text-align: left;
+	width: 73%;
+	margin-left: 9%;
+}
+
+/*menu content wrapper - menu4 frameworks*/
+#content #frameworks-wrapper{
+	text-align: left;
+}
+#content #frameworks-wrapper ul li{
+	list-style-type: none;
+	margin-top: 5%;
+	text-align: left;
+	width: 88%;
+	height: auto;
+	overflow-x: visible;
+}
+#content #frameworks-wrapper ul li header{
+	padding: 5px 8px !important;
+	margin-top: -24px;
+	text-align: left;
+	font-size: $fontsize20;
+	font-weight: normal;
+	background: -webkit-linear-gradient(#B8B8B8, #E0E0E0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#B8B8B8, #E0E0E0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#B8B8B8, #E0E0E0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#B8B8B8, #E0E0E0);
+	border: 1px solid #B8B8B8;
+}
+#content #frameworks-wrapper ul li header span{
+	width: 10px;
+	padding: 2px 8px;
+	border-radius: 25px;
+	background-color: #FFF;
+	color: #4d4d4d;
+	margin-right: 2%;
+}
+#content #frameworks-wrapper ul li  p{
+	color: #4d4d4d;
+	width: 90%;						
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#content #frameworks-wrapper ul li  p a{
+	cursor: pointer;
+	color: #EF8D24;
+}
+.more-link{
+	cursor: pointer;
+	color: $orange;
+	font-weight: bold;
+	text-align:left;
+	margin-left: 40px;
+}
+.short-display{
+	white-space: nowrap;
+}
+.normal-display{
+	white-space: normal;
+}

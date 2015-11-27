@@ -1,0 +1,41 @@
+<div id="frameworks-wrapper">
+	<a class="more-link"></a>
+	<ul>
+		<li>
+			<header><span>1</span> BootStrap</header>
+			<p class="short-display"><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> is the undisputed leader among the available frameworks today. Given its huge popularity, which is still growing every day, you can be sure that this wonderful toolkit won’t fail you, or leave you alone on your way to building successful websites.</p>
+		</li>
+		<li>
+			<header><span>2</span> Foundation</header>
+			<p class="short-display"><a href="http://foundation.zurb.com/" target="_blank">Foundation</a> is the second big player in this comparison. With a solid company like ZURB backing it, this framework has a truly strong … well… foundation. After all, Foundation is used on many big websites including Facebook, Mozilla, Ebay, Yahoo!, and National Geographic, to name a few.  <a href=""></a></p>
+		</li>
+		<li>
+			<header><span>3</span> Sematic UI</header>
+			<p class="short-display"><a href="http://semantic-ui.com/" target="_blank">Semantic UI</a> is an ongoing effort to make building websites much more semantic. It utilizes natural language principles, thus making the code much more readable and understandable.  <a href=""></a></p>
+		</li>
+		<li>
+			<header><span>4</span> Pure By Yahoo</header>
+			<p class="short-display"><a href="http://purecss.io/" target="_blank">Pure</a> is a lightweight, modular framework – written in pure CSS – that includes components that can be used together or separately depending on your needs.  <a href=""></a></p>
+		</li>
+		<li>
+			<header><span>5</span> UIkit</header>
+			<p class="short-display"><a href="http://getuikit.com/" target="_blank">UIkit</a> is a concise collection of easy to use and easy to customize components. Although it’s not as popular as its competitors, it offers the same functionality and quality.  <a href=""></a></p>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.more-link').html('More...');
+		$('.more-link').on('click',function(){
+			if( $('p').hasClass('short-display') ) {
+				$('p').toggleClass('short-display normal-display');
+				$('.more-link').html('Less...');
+			}
+			else{
+				$('p').toggleClass('short-display normal-display');	
+				$('.more-link').html('More...');			
+			}
+		});
+	});
+</script>

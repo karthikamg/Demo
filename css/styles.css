@@ -1,0 +1,370 @@
+/* line 4, ../resources/scss/helpers/_base.scss */
+body {
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  float: left;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* line 14, ../resources/scss/helpers/_base.scss */
+header, footer {
+  text-align: center;
+}
+
+/* line 18, ../resources/scss/helpers/_base.scss */
+#main-header {
+  padding: 30px 8px;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  color: white;
+  background-color: #5bbc2e;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+/* line 27, ../resources/scss/helpers/_base.scss */
+footer {
+  color: #4d4d4d;
+  font-size: 15px;
+  padding: 30px 8px;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* line 35, ../resources/scss/helpers/_base.scss */
+ul li {
+  list-style-type: circle;
+  text-align: left;
+  margin-top: 6px;
+}
+/* line 40, ../resources/scss/helpers/_base.scss */
+ul li a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+/* line 47, ../resources/scss/helpers/_base.scss */
+.no-display {
+  display: none;
+}
+
+/* line 50, ../resources/scss/helpers/_base.scss */
+.block-display {
+  display: block;
+}
+
+/* line 1, ../resources/scss/layout/_menu.scss */
+#content, #menu-wrapper {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* line 4, ../resources/scss/layout/_menu.scss */
+#page-icon {
+  width: 186px;
+  height: 125px;
+  overflow-x: hidden;
+  margin-top: -107px;
+  margin-left: 50px;
+  background-color: #4d4d4d;
+}
+/* line 10, ../resources/scss/layout/_menu.scss */
+#page-icon h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 86px;
+  overflow: hidden;
+  margin: 0;
+  margin-top: 9px;
+}
+
+/* line 21, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper {
+  float: left;
+  width: 17%;
+  height: auto;
+  overflow-x: hidden;
+  padding: 15px;
+  height: 80%;
+}
+/* line 26, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper h2 {
+  padding: 15px 0 0 41px;
+  text-align: left;
+  color: #4d4d4d;
+}
+/* line 32, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper ul#home-listing-wrapper li {
+  padding: 8px;
+  background: -webkit-linear-gradient(#b8b8b8, #e0e0e0);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#b8b8b8, #e0e0e0);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#b8b8b8, #e0e0e0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#b8b8b8, #e0e0e0);
+  border: 1px solid #b8b8b8;
+  cursor: pointer;
+  position: relative;
+}
+/* line 38, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper ul#home-listing-wrapper li:hover {
+  background: -webkit-linear-gradient(#e0e0e0, #b8b8b8);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e0e0e0, #b8b8b8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e0e0e0, #b8b8b8);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e0e0e0, #b8b8b8);
+  border: 1px solid #b8b8b8;
+}
+/* line 44, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper ul#home-sublisting-wrapper {
+  margin-left: 45px;
+}
+/* line 47, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper ul#home-sublisting-wrapper li {
+  background: -webkit-linear-gradient(white, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #ffffff);
+  border: 1px solid #b8b8b8;
+  cursor: pointer;
+  position: relative;
+  background: -webkit-linear-gradient(#ededed, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ededed, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ededed, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ededed, #ffffff);
+  border: 1px solid #b8b8b8;
+  color: #4d4d4d;
+}
+/* line 54, ../resources/scss/layout/_menu.scss */
+#content #menu-wrapper ul#home-sublisting-wrapper li:hover {
+  background: -webkit-linear-gradient(white, #ededed);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #ededed);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #ededed);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #ededed);
+  border: 1px solid #b8b8b8;
+}
+
+/* line 62, ../resources/scss/layout/_menu.scss */
+.selected-menu:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-top-color: #4d4d4d;
+  border-width: 6px 10px 0 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+/* line 1, ../resources/scss/layout/_menucontents.scss */
+#menu-content-wrapper {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* line 6, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper {
+  float: left;
+  width: 78%;
+  height: auto;
+  overflow-x: hidden;
+  padding: 15px;
+  height: 80%;
+  padding-top: 80px;
+}
+/* line 13, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scripting-wrapper header {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline;
+}
+/* line 20, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scripting-wrapper ul li {
+  color: #4d4d4d;
+}
+/* line 21, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scripting-wrapper ul li h2 {
+  color: #5bbc2e !important;
+  font-weight: bold;
+}
+/* line 28, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scripting-wrapper .sub-header {
+  color: #5bbc2e;
+  text-align: left;
+  margin: 50px 0 0 40px;
+}
+/* line 36, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper p {
+  color: #4d4d4d;
+  text-align: left;
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+/* line 44, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper ul li {
+  line-height: 2;
+  cursor: pointer;
+}
+/* line 49, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper ul li a:hover {
+  color: white;
+}
+/* line 53, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper ul li img {
+  width: 20px;
+  float: right;
+  cursor: pointer;
+}
+/* line 61, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper ul:nth-child(1) li {
+  background-color: #24b3b5;
+  padding: 9px;
+  color: white;
+  text-align: left;
+  list-style-type: none;
+  width: 20%;
+  height: auto;
+  overflow-x: hidden;
+}
+/* line 66, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper ul:nth-child(2) li {
+  background-color: #24b3b5;
+  padding: 9px;
+  color: white;
+  text-align: left;
+  list-style-type: none;
+  width: 20%;
+  height: auto;
+  overflow-x: hidden;
+}
+/* line 71, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #browse-wrapper ul:nth-child(3) li {
+  background-color: #24b3b5;
+  padding: 9px;
+  color: white;
+  text-align: left;
+  list-style-type: none;
+  width: 20%;
+  height: auto;
+  overflow-x: hidden;
+}
+/* line 78, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-comp-Wrapper section {
+  float: left;
+  width: 32%;
+  height: auto;
+  overflow-x: hidden;
+}
+/* line 81, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-comp-Wrapper section h2 {
+  font-weight: normal;
+  color: #4d4d4d;
+  font-size: 20px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 90%;
+  text-align: left;
+  margin-left: 9%;
+}
+/* line 91, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-comp-Wrapper section .each-style-wrapper {
+  color: #4d4d4d;
+  text-align: left;
+  width: 73%;
+  margin-left: 9%;
+}
+/* line 100, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #frameworks-wrapper {
+  text-align: left;
+}
+/* line 104, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #frameworks-wrapper ul li {
+  list-style-type: none;
+  margin-top: 5%;
+  text-align: left;
+  width: 88%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-x: visible;
+}
+/* line 111, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #frameworks-wrapper ul li header {
+  padding: 5px 8px !important;
+  margin-top: -24px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+  background: -webkit-linear-gradient(#b8b8b8, #e0e0e0);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#b8b8b8, #e0e0e0);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#b8b8b8, #e0e0e0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#b8b8b8, #e0e0e0);
+  border: 1px solid #b8b8b8;
+}
+/* line 119, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #frameworks-wrapper ul li header span {
+  width: 10px;
+  padding: 2px 8px;
+  border-radius: 25px;
+  background-color: #FFF;
+  color: #4d4d4d;
+  margin-right: 2%;
+}
+/* line 129, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #frameworks-wrapper ul li p {
+  color: #4d4d4d;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 134, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #frameworks-wrapper ul li p a {
+  cursor: pointer;
+  color: #ef8d24;
+}
+
+/* line 144, ../resources/scss/layout/_menucontents.scss */
+.more-link {
+  cursor: pointer;
+  color: #ef8d24;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 40px;
+}
+
+/* line 151, ../resources/scss/layout/_menucontents.scss */
+.short-display {
+  white-space: nowrap;
+}
+
+/* line 154, ../resources/scss/layout/_menucontents.scss */
+.normal-display {
+  white-space: normal;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Manager</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/css-styles.css">
+
+</head>
+<body>
+
+	<header id="main-header">Web Development</header>
+	<div id="page-icon"><h1>W</h1></div>
+
+	<div id="content" ng-app="menuSelect">
+		<aside id="menu-wrapper">
+			<h2>Menu</h2>
+			<ul id="home-listing-wrapper">
+				<li><a href="#/development">Development</a></li>
+				<li><a href="#/scripting">Scripting</a></li>
+				<li><a href="#/styling">CSS,SCSS,SASS</a></li>
+				<li><a href="#/framework">FrontEnd FrameWorks</a></li>
+				<li id="style-comp-wrapper">
+					<a href="#/stylingComparison" id="style-comp-wrapper">Styling Comparison</a>
+				</li>
+			</ul>
+			<ul id="home-sublisting-wrapper">
+				<li><a href="#/stylingComparison1">SCSS</a></li>
+				<li><a href="#/stylingComparison2">SASS</a></li>
+				<li><a href="#/stylingComparison3">Stylus</a></li>
+			</ul>
+		</aside>
+		<section id="menu-content-wrapper">
+			<ng-view></ng-view>
+		</section>
+	</div>
+
+	<footer>@ Demo Web Page.</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#menu-wrapper ul li:first-child').addClass('selected-menu');
+			$('#home-sublisting-wrapper').addClass('no-display');
+			$('#menu-wrapper ul li').on('click',function(){
+				$('#menu-wrapper ul li').removeClass('selected-menu');
+				$(this).addClass('selected-menu');
+			});
+			$('#style-comp-wrapper').on('click',function(){
+				if( $('#home-sublisting-wrapper').hasClass('no-display') ) {
+					$('#home-sublisting-wrapper').toggleClass('no-display block-display');
+				}
+				else{
+					$('#home-sublisting-wrapper').toggleClass('no-display block-display');
+				}
+			});
+			$('#home-sublisting-wrapper li').on('click',function(){
+				$('#home-sublisting-wrapper li').removeClass('selected-menu');
+				$(this).addClass('selected-menu');
+			});
+			
+		});
+	</script>
+
+</body>
+</html>
