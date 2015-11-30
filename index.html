@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="js/script.js"></script>
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
-	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/css-styles.css">
 
 </head>
@@ -24,16 +24,15 @@
 			<ul id="home-listing-wrapper">
 				<li><a href="#/development">Development</a></li>
 				<li><a href="#/scripting">Scripting</a></li>
-				<li><a href="#/styling">CSS,SCSS,SASS</a></li>
 				<li><a href="#/framework">FrontEnd FrameWorks</a></li>
-				<li id="style-comp-wrapper">
-					<a href="#/stylingComparison" id="style-comp-wrapper">Styling Comparison</a>
+				<li><a href="#/styling">Basic pre-processors</a></li>
+				<li>
+					<a id="style-comp-wrapper" href="#/stylingContent">Sassy CSS</a>
 				</li>
 			</ul>
 			<ul id="home-sublisting-wrapper">
-				<li><a href="#/stylingComparison1">SCSS</a></li>
-				<li><a href="#/stylingComparison2">SASS</a></li>
-				<li><a href="#/stylingComparison3">Stylus</a></li>
+				<li><a href="#/stylingComparison2">SCSS</a></li>
+				<li><a href="#/stylingComparison3">Compass</a></li>
 			</ul>
 		</aside>
 		<section id="menu-content-wrapper">
@@ -47,6 +46,7 @@
 		$(document).ready(function(){
 			$('#menu-wrapper ul li:first-child').addClass('selected-menu');
 			$('#home-sublisting-wrapper').addClass('no-display');
+
 			$('#menu-wrapper ul li').on('click',function(){
 				$('#menu-wrapper ul li').removeClass('selected-menu');
 				$(this).addClass('selected-menu');
@@ -65,6 +65,7 @@
 			});
 			
 		});
+
 	</script>
 
 </body>

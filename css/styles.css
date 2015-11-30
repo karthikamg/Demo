@@ -2,7 +2,7 @@
 body {
   margin: 0 auto;
   background-color: white;
-  color: black;
+  color: #4d4d4d;
   font-family: 'Source Sans Pro', sans-serif;
   float: left;
   text-align: center;
@@ -178,7 +178,7 @@ ul li a {
   right: 0;
 }
 
-/* line 1, ../resources/scss/layout/_menucontents.scss */
+/* line 3, ../resources/scss/layout/_menucontents.scss */
 #menu-content-wrapper {
   width: 100%;
   height: auto;
@@ -186,6 +186,15 @@ ul li a {
 }
 
 /* line 6, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scss-content-wrapper ul li header, #content #menu-content-wrapper #compass-content-wrapper header a {
+  font-weight: bold;
+  font-size: 24px;
+  color: #5bbc2e;
+  width: 86%;
+  text-decoration: underline;
+}
+
+/* line 15, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper {
   float: left;
   width: 78%;
@@ -195,29 +204,29 @@ ul li a {
   height: 80%;
   padding-top: 80px;
 }
-/* line 13, ../resources/scss/layout/_menucontents.scss */
+/* line 22, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #scripting-wrapper header {
   color: #4d4d4d;
   font-weight: bold;
   font-size: 22px;
   text-decoration: underline;
 }
-/* line 20, ../resources/scss/layout/_menucontents.scss */
+/* line 29, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #scripting-wrapper ul li {
   color: #4d4d4d;
 }
-/* line 21, ../resources/scss/layout/_menucontents.scss */
+/* line 30, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #scripting-wrapper ul li h2 {
   color: #5bbc2e !important;
   font-weight: bold;
 }
-/* line 28, ../resources/scss/layout/_menucontents.scss */
+/* line 37, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #scripting-wrapper .sub-header {
   color: #5bbc2e;
   text-align: left;
   margin: 50px 0 0 40px;
 }
-/* line 36, ../resources/scss/layout/_menucontents.scss */
+/* line 45, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper p {
   color: #4d4d4d;
   text-align: left;
@@ -225,22 +234,22 @@ ul li a {
   margin: 0 auto;
   margin-top: 15px;
 }
-/* line 44, ../resources/scss/layout/_menucontents.scss */
+/* line 53, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul li {
   line-height: 2;
   cursor: pointer;
 }
-/* line 49, ../resources/scss/layout/_menucontents.scss */
+/* line 58, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul li a:hover {
   color: white;
 }
-/* line 53, ../resources/scss/layout/_menucontents.scss */
+/* line 62, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul li img {
   width: 20px;
   float: right;
   cursor: pointer;
 }
-/* line 61, ../resources/scss/layout/_menucontents.scss */
+/* line 70, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul:nth-child(1) li {
   background-color: #24b3b5;
   padding: 9px;
@@ -251,7 +260,7 @@ ul li a {
   height: auto;
   overflow-x: hidden;
 }
-/* line 66, ../resources/scss/layout/_menucontents.scss */
+/* line 75, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul:nth-child(2) li {
   background-color: #24b3b5;
   padding: 9px;
@@ -262,7 +271,7 @@ ul li a {
   height: auto;
   overflow-x: hidden;
 }
-/* line 71, ../resources/scss/layout/_menucontents.scss */
+/* line 80, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul:nth-child(3) li {
   background-color: #24b3b5;
   padding: 9px;
@@ -273,14 +282,14 @@ ul li a {
   height: auto;
   overflow-x: hidden;
 }
-/* line 78, ../resources/scss/layout/_menucontents.scss */
+/* line 87, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #styling-comp-Wrapper section {
   float: left;
   width: 32%;
   height: auto;
   overflow-x: hidden;
 }
-/* line 81, ../resources/scss/layout/_menucontents.scss */
+/* line 90, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #styling-comp-Wrapper section h2 {
   font-weight: normal;
   color: #4d4d4d;
@@ -291,18 +300,18 @@ ul li a {
   text-align: left;
   margin-left: 9%;
 }
-/* line 91, ../resources/scss/layout/_menucontents.scss */
+/* line 100, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #styling-comp-Wrapper section .each-style-wrapper {
   color: #4d4d4d;
   text-align: left;
   width: 73%;
   margin-left: 9%;
 }
-/* line 100, ../resources/scss/layout/_menucontents.scss */
+/* line 109, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper {
   text-align: left;
 }
-/* line 104, ../resources/scss/layout/_menucontents.scss */
+/* line 113, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li {
   list-style-type: none;
   margin-top: 5%;
@@ -312,7 +321,7 @@ ul li a {
   overflow-x: hidden;
   overflow-x: visible;
 }
-/* line 111, ../resources/scss/layout/_menucontents.scss */
+/* line 120, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li header {
   padding: 5px 8px !important;
   margin-top: -24px;
@@ -328,7 +337,7 @@ ul li a {
   background: linear-gradient(#b8b8b8, #e0e0e0);
   border: 1px solid #b8b8b8;
 }
-/* line 119, ../resources/scss/layout/_menucontents.scss */
+/* line 128, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li header span {
   width: 10px;
   padding: 2px 8px;
@@ -337,20 +346,142 @@ ul li a {
   color: #4d4d4d;
   margin-right: 2%;
 }
-/* line 129, ../resources/scss/layout/_menucontents.scss */
+/* line 138, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li p {
   color: #4d4d4d;
   width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 134, ../resources/scss/layout/_menucontents.scss */
+/* line 143, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li p a {
   cursor: pointer;
   color: #ef8d24;
 }
+/* line 152, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper h1 {
+  color: #4d4d4d !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* line 157, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #css-prepro-list {
+  width: 68%;
+  height: auto;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  background: -webkit-linear-gradient(#e0e0e0, #f8f8f8);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e0e0e0, #f8f8f8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e0e0e0, #f8f8f8);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e0e0e0, #f8f8f8);
+  border: 1px solid #b8b8b8;
+  border: none;
+}
+/* line 165, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #css-prepro-list li {
+  list-style-type: none;
+  font-size: 22px;
+  float: left;
+  margin-left: 10%;
+  border: none;
+  text-decoration: underline;
+}
+/* line 173, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #css-prepro-list li a {
+  color: #5bbc2e;
+}
+/* line 175, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #css-prepro-list li a:hover {
+  color: #4d4d4d;
+}
+/* line 181, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #each-css-prepro {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+  color: #4d4d4d;
+  margin-top: 8px;
+  margin-left: 7%;
+}
+/* line 190, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #each-css-prepro li {
+  list-style-type: none;
+  font-size: 20px;
+  text-align: left;
+}
+/* line 194, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #styling-content-wrapper #each-css-prepro li span {
+  color: #5bbc2e;
+  font-size: 20px;
+}
+/* line 201, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scss-content-wrapper {
+  text-align: left;
+}
+/* line 205, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scss-content-wrapper ul li {
+  list-style-type: none;
+  color: #4d4d4d;
+}
+/* line 214, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scss-content-wrapper #scss-content-listing {
+  width: 20%;
+  float: left;
+}
+/* line 218, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scss-content-wrapper #scss-content-listing li {
+  list-style-type: circle;
+  font-size: 18px;
+  text-decoration: underline;
+}
+/* line 224, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #scss-content-wrapper #each-prop {
+  float: right;
+  width: 70%;
+  margin-top: -16px;
+}
+/* line 231, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #compass-content-wrapper header {
+  text-align: left;
+}
+/* line 233, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #compass-content-wrapper header a {
+  margin-left: 24px;
+}
+/* line 239, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper #compass-content-wrapper ul li {
+  color: #4d4d4d;
+}
+/* line 244, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper .sass-section-wrapper {
+  width: 84%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  color: #4d4d4d;
+}
+/* line 247, ../resources/scss/layout/_menucontents.scss */
+#content #menu-content-wrapper .scss-section-wrapper {
+  width: 84%;
+  background-color: #e0e0e0;
+  padding: 10px;
+  color: #4d4d4d;
+  -webkit-border-radius: 4px 8px;
+  -moz-border-radius: 4px / 8px;
+  border-radius: 4px / 8px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
 
-/* line 144, ../resources/scss/layout/_menucontents.scss */
+/* line 255, ../resources/scss/layout/_menucontents.scss */
 .more-link {
   cursor: pointer;
   color: #ef8d24;
@@ -359,12 +490,12 @@ ul li a {
   margin-left: 40px;
 }
 
-/* line 151, ../resources/scss/layout/_menucontents.scss */
+/* line 262, ../resources/scss/layout/_menucontents.scss */
 .short-display {
   white-space: nowrap;
 }
 
-/* line 154, ../resources/scss/layout/_menucontents.scss */
+/* line 265, ../resources/scss/layout/_menucontents.scss */
 .normal-display {
   white-space: normal;
 }

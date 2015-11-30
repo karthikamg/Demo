@@ -1,5 +1,14 @@
+@import "compass/typography/vertical_rhythm";
+
 #menu-content-wrapper{
 	@include size;
+}
+%section-header{
+	font-weight: bold;
+	font-size: $base-line-height;
+	color: $green1;
+	width: 86%;
+	text-decoration: underline;
 }
 
 #content{
@@ -139,8 +148,110 @@
 				}
 			}
 		}
+		#styling-content-wrapper{
+			h1{
+				color: $greyshade3 !important;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			#css-prepro-list{
+				@include size(68%);
+				text-align: center;
+			    margin: 0 auto;
+			    height: 50px;
+				@include bg-gradient($greyshade2,$greyshade1);
+				border: none;
+
+				li{
+					list-style-type: none;
+					font-size: $fontsize22;
+					float:left;
+					margin-left: 10%;
+					border: none;
+					text-decoration: underline;
+
+					a{
+						color: $green1;	
+						&:hover{
+							color: $greyshade3;
+						}					
+					}
+				}
+			}
+			#each-css-prepro{
+				@include size;
+				text-align: center;
+			    margin: 0 auto;
+			    float: left;
+			    color: $greyshade3;
+			    margin-top: 8px;
+			    margin-left: 7%;
+
+				li{
+					list-style-type: none;
+					font-size: $fontsize20;
+					text-align: left;
+					span{
+						color: $green1;	
+						font-size: $fontsize20;				
+					}
+				}
+			}
+		}
+		#scss-content-wrapper{
+			text-align: left;
+
+			ul{
+				li{
+					list-style-type: none;
+					color: $greyshade3;
+
+					header{
+						@extend %section-header;
+					}
+				}
+			}
+			#scss-content-listing{
+					width: 20%;
+					float: left;
+
+				li{
+					list-style-type: circle;
+					font-size: 18px;
+					text-decoration: underline;
+				}
+			}
+			#each-prop{
+					float: right;
+				    width: 70%;
+				    margin-top: -16px;
+			}
+		}
+		#compass-content-wrapper{
+			header{
+				text-align: left;				
+				a{
+					@extend %section-header;
+					margin-left: 24px;				
+				}
+			}
+			ul{
+				li{
+					color: $greyshade3;
+				}
+			}
+		}
+		.sass-section-wrapper{
+			@include each-css-section;
+		}
+		.scss-section-wrapper{
+			@include each-css-section($greyshade2);
+			@include border-radius(4px, 8px);
+			@include box-sizing(content-box);
+		}
 	}
 }
+
 .more-link{
 	cursor: pointer;
 	color: $orange;

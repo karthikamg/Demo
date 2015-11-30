@@ -26,3 +26,9 @@
 	@include size(20%);
 
 }
+@mixin each-css-section($color: $greyshade1){
+	width: 84%;
+	background-color: $color;
+	padding: 10px;
+	color: $greyshade3;
+}
