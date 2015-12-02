@@ -31,42 +31,36 @@ app.config(function($routeProvider) {
         .when('/stylingComparison3', {
             templateUrl : '/templates/compass-content.html'
         });
-        // .when('/variables', {
-        //     templateUrl : '/templates/sassTemplates/variables.html'
-        // })
-        // .when('/nesting', {
-        //     templateUrl : '/templates/sassTemplates/nesting.html'
-        // })
-        // .when('/partials', {
-        //     templateUrl : '/templates/sassTemplates/partials.html'
-        // })
-        // .when('/import', {
-        //     templateUrl : '/templates/sassTemplates/import.html'
-        // })
-        // .when('/mixins', {
-        //     templateUrl : '/templates/sassTemplates/mixins.html'
-        // })
-        // .when('/inheritance', {
-        //     templateUrl : '/templates/sassTemplates/inheritance.html'
-        // })
-        // .when('/back', {
-        //     templateUrl : '/templates/scss-content.html'
-        // })
-        // .when('/nestingback', {
-        //     templateUrl : '/templates/scss-content.html'
-        // })
-        // .when('/inheritback', {
-        //     templateUrl : '/templates/scss-content.html'
-        // })
-        // .when('/partialsback', {
-        //     templateUrl : '/templates/scss-content.html'
-        // })
-        // .when('/importback', {
-        //     templateUrl : '/templates/scss-content.html'
-        // })
-        //  .when('/mixinsback', {
-        //     templateUrl : '/templates/scss-content.html'
-        // });
+});
+
+
+//click event for sub-link
+app.controller('styleComp',function($scope){
+    $scope.myClass = [];
+    $scope.myClass.push('no-display');
+    $scope.styleComptoggleClass = function(){
+        if($scope.myClass.indexOf('block-display') == -1){
+            $scope.myClass.pop('no-display');
+            $scope.myClass.push('block-display');
+        }
+        else{
+            $scope.myClass.pop('block-display');
+            $scope.myClass.push('no-display');
+        }
+    }
+});
+
+app.controller('jsonData',function($scope,$http){
+    $scope.people = [];
+    $http({
+      method: 'GET',
+      url: '/resources/table-content.json'
+        }).then(function successCallback(response) {
+            $scope.people = response.data["records"];
+        }, function errorCallback(response) {
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+    });
 });
 
 

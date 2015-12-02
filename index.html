@@ -13,24 +13,23 @@
 	<link rel="stylesheet" type="text/css" href="css/css-styles.css">
 
 </head>
-<body>
+<body ng-app="menuSelect">
 
 	<header id="main-header">Web Development</header>
 	<div id="page-icon"><h1>W</h1></div>
 
-	<div id="content" ng-app="menuSelect">
+	<div id="content" ng-controller="styleComp">
 		<aside id="menu-wrapper">
 			<h2>Menu</h2>
 			<ul id="home-listing-wrapper">
 				<li><a href="#/development">Development</a></li>
 				<li><a href="#/scripting">Scripting</a></li>
 				<li><a href="#/framework">FrontEnd FrameWorks</a></li>
-				<li><a href="#/styling">Basic pre-processors</a></li>
-				<li>
-					<a id="style-comp-wrapper" href="#/stylingContent">Sassy CSS</a>
-				</li>
+				<li><a  href="#/stylingContent">Basic Pre-processors</a></li>
+				<li><a id="style-comp-wrapper" href="#/styling" ng-click="styleComptoggleClass()">SASS and Compass</a></li>
+
 			</ul>
-			<ul id="home-sublisting-wrapper">
+			<ul id="home-sublisting-wrapper" ng-class="myClass">
 				<li><a href="#/stylingComparison2">SCSS</a></li>
 				<li><a href="#/stylingComparison3">Compass</a></li>
 			</ul>
@@ -40,32 +39,39 @@
 		</section>
 	</div>
 
-	<footer>@ Demo Web Page.</footer>
+	<!-- <div ng-controller="jsonData">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>City</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tr ng-repeat="person in people">
+				<td>{{person.name}}</td>
+				<td>{{person.city}}</td>
+				<td>{{person.country}}</td>
+			</tr>
+		</table>
+	</div> -->
+
+	<footer id="footer">@ Demo Web Page.</footer>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+
 			$('#menu-wrapper ul li:first-child').addClass('selected-menu');
-			$('#home-sublisting-wrapper').addClass('no-display');
 
 			$('#menu-wrapper ul li').on('click',function(){
 				$('#menu-wrapper ul li').removeClass('selected-menu');
 				$(this).addClass('selected-menu');
 			});
-			$('#style-comp-wrapper').on('click',function(){
-				if( $('#home-sublisting-wrapper').hasClass('no-display') ) {
-					$('#home-sublisting-wrapper').toggleClass('no-display block-display');
-				}
-				else{
-					$('#home-sublisting-wrapper').toggleClass('no-display block-display');
-				}
-			});
 			$('#home-sublisting-wrapper li').on('click',function(){
 				$('#home-sublisting-wrapper li').removeClass('selected-menu');
 				$(this).addClass('selected-menu');
-			});
-			
+			});			
 		});
-
 	</script>
 
 </body>
