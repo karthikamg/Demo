@@ -1,7 +1,7 @@
 /* line 4, ../resources/scss/helpers/_base.scss */
 body {
   margin: 0 auto;
-  background-color: white;
+  background-color: #FFF;
   color: #4d4d4d;
   font-family: 'Source Sans Pro', sans-serif;
   float: left;
@@ -22,7 +22,7 @@ header, footer {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  color: white;
+  color: #FFF;
   background-color: #5bbc2e;
   font-weight: bold;
   font-size: 38px;
@@ -80,7 +80,7 @@ ul li a {
 /* line 10, ../resources/scss/layout/_menu.scss */
 #page-icon h1 {
   font-weight: bold;
-  color: white;
+  color: #FFF;
   font-size: 86px;
   overflow: hidden;
   margin: 0;
@@ -105,27 +105,27 @@ ul li a {
 /* line 32, ../resources/scss/layout/_menu.scss */
 #content #menu-wrapper ul#home-listing-wrapper li {
   padding: 8px;
-  background: -webkit-linear-gradient(#b8b8b8, #e0e0e0);
+  background: -webkit-linear-gradient(#B8B8B8, #E0E0E0);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#b8b8b8, #e0e0e0);
+  background: -o-linear-gradient(#B8B8B8, #E0E0E0);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#b8b8b8, #e0e0e0);
+  background: -moz-linear-gradient(#B8B8B8, #E0E0E0);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#b8b8b8, #e0e0e0);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
   cursor: pointer;
   position: relative;
 }
 /* line 38, ../resources/scss/layout/_menu.scss */
 #content #menu-wrapper ul#home-listing-wrapper li:hover {
-  background: -webkit-linear-gradient(#e0e0e0, #b8b8b8);
+  background: -webkit-linear-gradient(#E0E0E0, #B8B8B8);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#e0e0e0, #b8b8b8);
+  background: -o-linear-gradient(#E0E0E0, #B8B8B8);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#e0e0e0, #b8b8b8);
+  background: -moz-linear-gradient(#E0E0E0, #B8B8B8);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#e0e0e0, #b8b8b8);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
 }
 /* line 44, ../resources/scss/layout/_menu.scss */
 #content #menu-wrapper ul#home-sublisting-wrapper {
@@ -133,36 +133,36 @@ ul li a {
 }
 /* line 47, ../resources/scss/layout/_menu.scss */
 #content #menu-wrapper ul#home-sublisting-wrapper li {
-  background: -webkit-linear-gradient(white, white);
+  background: -webkit-linear-gradient(#FFF, #FFF);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white, white);
+  background: -o-linear-gradient(#FFF, #FFF);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white, white);
+  background: -moz-linear-gradient(#FFF, #FFF);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#ffffff, #ffffff);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
   cursor: pointer;
   position: relative;
-  background: -webkit-linear-gradient(#ededed, white);
+  background: -webkit-linear-gradient(#ededed, #FFF);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ededed, white);
+  background: -o-linear-gradient(#ededed, #FFF);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ededed, white);
+  background: -moz-linear-gradient(#ededed, #FFF);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#ededed, #ffffff);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
   color: #4d4d4d;
 }
 /* line 54, ../resources/scss/layout/_menu.scss */
 #content #menu-wrapper ul#home-sublisting-wrapper li:hover {
-  background: -webkit-linear-gradient(white, #ededed);
+  background: -webkit-linear-gradient(#FFF, #ededed);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white, #ededed);
+  background: -o-linear-gradient(#FFF, #ededed);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white, #ededed);
+  background: -moz-linear-gradient(#FFF, #ededed);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#ffffff, #ededed);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
 }
 
 /* line 62, ../resources/scss/layout/_menu.scss */
@@ -179,12 +179,12 @@ ul li a {
   right: 0;
 }
 
-/* line 10, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #root {
   clear: both;
   min-height: 100%;
@@ -192,12 +192,12 @@ html, body {
   height: 100%;
   margin-bottom: -54px;
 }
-/* line 18, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
   height: 54px;
 }
 
-/* line 20, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
@@ -267,7 +267,7 @@ html, body {
 }
 /* line 64, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul li a:hover {
-  color: white;
+  color: #FFF;
 }
 /* line 68, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #browse-wrapper ul li img {
@@ -279,7 +279,7 @@ html, body {
 #content #menu-content-wrapper #browse-wrapper ul:nth-child(1) li {
   background-color: #24b3b5;
   padding: 9px;
-  color: white;
+  color: #FFF;
   text-align: left;
   list-style-type: none;
   width: 20%;
@@ -290,7 +290,7 @@ html, body {
 #content #menu-content-wrapper #browse-wrapper ul:nth-child(2) li {
   background-color: #24b3b5;
   padding: 9px;
-  color: white;
+  color: #FFF;
   text-align: left;
   list-style-type: none;
   width: 20%;
@@ -301,7 +301,7 @@ html, body {
 #content #menu-content-wrapper #browse-wrapper ul:nth-child(3) li {
   background-color: #24b3b5;
   padding: 9px;
-  color: white;
+  color: #FFF;
   text-align: left;
   list-style-type: none;
   width: 20%;
@@ -321,7 +321,7 @@ html, body {
   color: #4d4d4d;
   font-size: 20px;
   margin-bottom: 2px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #E0E0E0;
   width: 90%;
   text-align: left;
   margin-left: 9%;
@@ -354,14 +354,14 @@ html, body {
   text-align: left;
   font-size: 20px;
   font-weight: normal;
-  background: -webkit-linear-gradient(#b8b8b8, #e0e0e0);
+  background: -webkit-linear-gradient(#B8B8B8, #E0E0E0);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#b8b8b8, #e0e0e0);
+  background: -o-linear-gradient(#B8B8B8, #E0E0E0);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#b8b8b8, #e0e0e0);
+  background: -moz-linear-gradient(#B8B8B8, #E0E0E0);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#b8b8b8, #e0e0e0);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
 }
 /* line 134, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li header span {
@@ -382,7 +382,7 @@ html, body {
 /* line 149, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #frameworks-wrapper ul li p a {
   cursor: pointer;
-  color: #ef8d24;
+  color: #EF8D24;
 }
 /* line 158, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #styling-content-wrapper h1 {
@@ -398,14 +398,14 @@ html, body {
   text-align: center;
   margin: 0 auto;
   height: 50px;
-  background: -webkit-linear-gradient(#e0e0e0, #f8f8f8);
+  background: -webkit-linear-gradient(#E0E0E0, #F8F8F8);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#e0e0e0, #f8f8f8);
+  background: -o-linear-gradient(#E0E0E0, #F8F8F8);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#e0e0e0, #f8f8f8);
+  background: -moz-linear-gradient(#E0E0E0, #F8F8F8);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#e0e0e0, #f8f8f8);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #B8B8B8;
   border: none;
 }
 /* line 171, ../resources/scss/layout/_menucontents.scss */
@@ -465,7 +465,7 @@ html, body {
 /* line 224, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper #scss-content-wrapper #scss-content-listing li {
   list-style-type: circle;
-  list-style-image: circle;
+  list-style: circle;
   font-size: 18px;
   text-decoration: underline;
 }
@@ -490,33 +490,33 @@ html, body {
 /* line 251, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper .sass-section-wrapper {
   width: 84%;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
   padding: 10px;
   color: #4d4d4d;
 }
 /* line 254, ../resources/scss/layout/_menucontents.scss */
 #content #menu-content-wrapper .scss-section-wrapper {
   width: 84%;
-  background-color: #e0e0e0;
+  background-color: #E0E0E0;
   padding: 10px;
   color: #4d4d4d;
-  -webkit-border-radius: 4px 8px;
   -moz-border-radius: 4px / 8px;
+  -webkit-border-radius: 4px 8px;
   border-radius: 4px / 8px;
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
 /* line 261, ../resources/scss/layout/_menucontents.scss */
 footer {
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
 }
-/* line 10, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 footer html, footer body {
   height: 100%;
 }
-/* line 12, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 footer #root {
   clear: both;
   min-height: 100%;
@@ -524,11 +524,11 @@ footer #root {
   height: 100%;
   margin-bottom: -54px;
 }
-/* line 18, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 footer #root #root_footer {
   height: 54px;
 }
-/* line 20, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 footer #footer {
   clear: both;
   position: relative;
@@ -538,7 +538,7 @@ footer #footer {
 /* line 266, ../resources/scss/layout/_menucontents.scss */
 .more-link {
   cursor: pointer;
-  color: #ef8d24;
+  color: #EF8D24;
   font-weight: bold;
   text-align: left;
   margin-left: 40px;
